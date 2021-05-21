@@ -1,15 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>科科快餐點餐價格表</title>
+
+    <style>
+        h1 {
+            font-size: 36px;
+            font-weight: bolder;
+            color: blue;
+            text-align: center;
+        }
+        
+        table {
+            margin: auto;
+            border: gray;
+            border-style: dashed;
+            border-width: 1px;
+        }
+        
+        #tableCaption {
+            border-style: dashed;
+            border-width: 1px;
+        }
+        
+        td {
+            border-style: dotted;
+            border-width: 1px;
+            padding: 10px;
+            color: green;
+        }
+        
+        .content {
+            color: green;
+            font-family: Arial;
+            font-size: 18px;
+        }
+        
+        #tableTitle {
+            border-style: dotted;
+            border-width: 1px;
+            font-weight: bolder;
+            font-size: 18px;
+            color: purple;
+            text-align: center
+        }
+        
+        #no {
+            border: 0px;
+        }
+    </style>
+    <script>
+        var i, j = 6;
+        document.write("<h1>科科快餐點餐價格表</h2>")
+        document.write("<table>")
+
+        document.write("<tr>")
+        document.write("<td id=\"no\">" + "&nbsp;" + "</td>")
+        for (i = 8; i <= 20; i += 3) {
+            j -= 1
+            document.write("<td id=\"tableTitle\">" + j + "號餐<br>" + i + "元" + "</td>")
+        }
+        document.write("</tr>")
+
+        document.write("<tr>")
+        document.write("<td id=\"tableTitle\">" + "3" + "</td>")
+        for (i = 8; i <= 20; i += 3) {
+            document.write("<td>" + "3*" + i + "=" + 3 * i + "</td>")
+        }
+        document.write("</tr>")
+
+        document.write("<tr>")
+        document.write("<td id=\"tableTitle\">" + "4" + "</td>")
+        for (i = 8; i <= 20; i += 3) {
+            document.write("<td>" + "4*" + i + "=" + 4 * i + "</td>")
+        }
+        document.write("</tr>")
+
+        document.write("<tr>")
+        document.write("<td id=\"tableTitle\">" + "5" + "</td>")
+        for (i = 8; i <= 20; i += 3) {
+            document.write("<td>" + "5*" + i + "=" + 5 * i + "</td>")
+        }
+        document.write("</tr>")
+
+        document.write("<tr>")
+        document.write("<td id=\"tableTitle\">" + "6" + "</td>")
+        for (i = 8; i <= 20; i += 3) {
+            document.write("<td>" + "6*" + i + "=" + 6 * i + "</td>")
+        }
+        document.write("</tr>")
+
+        document.write("<tr>")
+        document.write("<td id=\"tableTitle\">" + "7" + "</td>")
+        for (i = 8; i <= 20; i += 3) {
+            document.write("<td>" + "7*" + i + "=" + 7 * i + "</td>")
+        }
+        document.write("</tr>")
+        document.write("</table>")
+    </script>
 </head>
 
 <body>
-    <p>n</p>
+
 </body>
 
 </html>
